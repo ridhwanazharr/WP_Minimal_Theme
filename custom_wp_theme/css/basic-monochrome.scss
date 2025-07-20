@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;500;600;700&family=inter:wght@400;500;600;700&display=swap');
+
+$link-transition:color 0.3s ease;
+@import 'components/_header.scss';
+@import 'components/_content.scss';
+@import 'components/_footer.scss';
+@import 'components/_comments.scss';
+@import 'components/_navigation.scss';
+@import 'components/_blockquote.scss';
+
+$color-white: #ffffff;
+$color-black: #000000;
+$font-stack: 'Cardo', sans-serif;
+$base-font-size: 20px;
+$line-height: 1.6;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: $base-font-size;
+  line-height: $line-height;
+  color: $color-black;
+  background-color: $color-white;
+  margin-bottom:0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 0 0 1rem;
+}

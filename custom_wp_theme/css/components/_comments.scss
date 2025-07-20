@@ -1,0 +1,117 @@
+$link-color:#333333;
+$link-color-secondary:#5e5e5e;
+$link-color-hover:black;
+$link-transition:color 0.3s ease;
+
+.comments-area{
+
+    a{
+        color:$link-color;
+        transition:$link-transition;
+    }
+    .comment-title-head{
+        padding-top:1rem;
+        margin-bottom:0.25rem;
+        border-top:1px solid #707070;
+    }
+    .comments-title{
+        font-size:1.25rem;
+        font-style:italic;
+        font-weight:400;
+    }
+
+    .comment-list{
+        margin:0;
+        margin-bottom:2rem;
+        padding:0;
+        list-style: none;
+        .comment-body{
+            margin-bottom:1rem;
+            padding:1rem 1.5rem 1rem 1.5rem;
+            border:1px solid #d4d4d4;
+            border-radius:15px;
+
+            .comment-meta{
+                display:flex;
+                justify-content:space-between;
+                @media (max-width: 720px) {
+                    flex-direction:column;
+                }
+                
+            }
+
+            .comment-author{
+                display:flex;
+                gap:0.5rem;
+                align-items:center;
+
+                img{
+                    border-radius:50%;
+                    border:1px solid #8a8a8a;
+                }
+
+                .fn{
+                    a{
+                        text-decoration:none;
+                        color:black;
+                    }
+                }
+            }
+
+            .comment-metadata{
+                display:flex;
+                gap:1rem;
+                justify-content:end;
+                font-size:0.9rem;
+                a{
+                    text-decoration:none;
+                }
+
+                .comment-edit-link{
+                    color:$link-color-secondary;
+                    text-decoration:underline;
+                    font-size:0.9rem;
+                    &:hover{
+                        color:$link-color-hover;
+                        transition:$link-transition;
+                    }
+                }
+
+                @media (max-width: 720px) {
+                    margin-top:0.5rem;
+                    justify-content:start;
+                }
+            }
+
+            .comment-content{
+                p{
+                    margin: 1rem 0 1rem 0;
+                    line-height:1.25rem;
+                    font-weight:400;
+                }
+            }
+
+            .reply{
+                color:$link-color-secondary;
+                padding:0.25rem 1rem 0.25rem 1rem;
+                border:1px solid gray;
+                font-size:0.9rem;
+                width:fit-content;
+                border-radius:10px;
+                transition:background-color 0.3s ease, color 0.3s ease;
+
+                a{
+                    text-decoration:none;
+                }
+                
+                &:hover{
+                    background-color:$link-color-secondary;
+                    a{
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,9 @@
+$bquote-color:#1f1f1f;
+$bquote-bg:#eeeeee;
+
+.wp-block-quote{
+    padding:1rem;
+    background-color:$bquote-bg;
+    color:$bquote-color;
+    font-style:italic;
+}

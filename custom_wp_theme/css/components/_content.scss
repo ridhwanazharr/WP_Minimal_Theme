@@ -1,0 +1,53 @@
+$link-color:#5e5e5e;
+$link-color-hover:#161616;
+
+.page{
+    margin:0;
+}
+
+.site-main{
+    padding: 1rem 4rem 1rem 4rem;
+    min-height:80vh;
+
+    .entry-header{
+        .entry-title{
+            text-align:center;
+        }
+        .entry-meta{
+            text-align:end;
+            @media(max-width:720px){
+                text-align:start;
+            }
+            a{
+                text-decoration:none;
+            }
+        }
+    }
+
+    a{
+        color:$link-color;
+        transition:$link-transition;
+        &:hover{
+            color:$link-color-hover;
+        }
+    }
+
+    .entry-footer{
+        display:flex;
+        gap:1rem;
+    }
+}
+
+.site-main.no-padding{
+    padding:0;
+}
+
+.post{
+    margin-bottom:3rem;
+}
+
+@media(max-width:720px){
+    .site-main{
+        padding: 1rem;
+    }
+}
