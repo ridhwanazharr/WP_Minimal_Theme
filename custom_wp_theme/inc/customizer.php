@@ -52,6 +52,13 @@ function custiom_wp_theme_customize_register( $wp_customize ) {
 			'type'     => 'text',
 		) );
 
+		$wp_customize->add_setting( 'contact_address', array( 'default' => '' ) );
+		$wp_customize->add_control( 'contact_address', array(
+			'label'    => __( 'Address', 'custiom_wp_theme' ),
+			'section'  => 'contact_social_section',
+			'type'     => 'text',
+		) );
+
 		// Social Links
 		$wp_customize->add_setting( 'social_behance', array( 'default' => '' ) );
 		$wp_customize->add_control( 'social_behance', array(

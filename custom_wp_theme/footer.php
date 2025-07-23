@@ -42,7 +42,11 @@
 				<?php if ( get_theme_mod( 'contact_email' ) ) : ?>
 					<p><?php echo esc_html( get_theme_mod( 'contact_email' ) ); ?></p>
 				<?php endif; ?>
-				
+				<div class="contact-address">
+					<?php if ( get_theme_mod( 'contact_address' ) ) : ?>
+						<p><?php echo esc_html( get_theme_mod( 'contact_address' ) ); ?></p>
+					<?php endif; ?>
+				</div>
 				
 			</div>
 			<div class="footer-menu">
@@ -58,17 +62,7 @@
 			</div>
 		</div>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'custiom_wp_theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'custiom_wp_theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'custiom_wp_theme' ), 'custiom_wp_theme', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
+			<p>Copyright <?php echo date("Y"); ?> - <?php bloginfo( 'name' ); ?></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -1,0 +1,9 @@
+{
+  "apiVersion": 2,
+  "name": "custiom-wp-theme/contact-info",
+  "title": "Contact Info",
+  "category": "widgets",
+  "icon": "id",
+  "editorScript": "custiom-wp-theme-contact-info",
+  "render": "file:./render.php"
+}

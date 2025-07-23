@@ -8,6 +8,9 @@ $link-transition:color 0.3s ease;
 @import 'components/_navigation.scss';
 @import 'components/_blockquote.scss';
 
+@import 'blocks/_contact-form.scss';
+@import 'blocks/_contact-info.scss';
+
 $color-white: #ffffff;
 $color-black: #000000;
 $font-stack: 'Cardo', sans-serif;

@@ -66,7 +66,7 @@
 }
 
 .site-main {
-  padding: 1rem 4rem 1rem 4rem;
+  padding: 1rem 4rem 0 4rem;
   min-height: 80vh;
 }
 .site-main .entry-header .entry-title {
@@ -105,7 +105,7 @@
 
 @media (max-width: 720px) {
   .site-main {
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
   }
 }
 .site-footer {
@@ -116,7 +116,7 @@
 .site-footer .footer-row {
   display: flex;
   gap: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid #414141;
 }
 .site-footer .footer-row .site-branding {
@@ -131,6 +131,8 @@
 }
 .site-footer .footer-row .site-branding .site-tagline {
   font-size: 20px;
+  color: #c5c5c5;
+  font-weight: 400;
 }
 .site-footer .footer-row .site-branding p {
   margin: 0;
@@ -162,6 +164,16 @@
   align-items: start;
   gap: 0.5rem;
 }
+.site-footer .footer-row .footer-menu .contact-address {
+  display: block;
+}
+.site-footer .footer-row .footer-menu .contact-address p {
+  display: block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+}
 .site-footer ul.menu {
   margin: 0;
   display: flex;
@@ -176,6 +188,11 @@
 .site-footer .site-info {
   padding-top: 1rem;
   text-align: center;
+  color: #c5c5c5;
+  font-size: 16px;
+}
+.site-footer .site-info p {
+  margin: 0;
 }
 .site-footer a {
   color: #aaaaaa;
@@ -183,6 +200,15 @@
 }
 .site-footer a:hover {
   color: white;
+}
+
+.entry-footer {
+  background-color: #6e6e6e;
+  color: black;
+  justify-content: center;
+}
+.entry-footer a {
+  text-decoration: none;
 }
 
 @media (max-width: 720px) {
@@ -319,7 +345,7 @@
 }
 .main-navigation ul .sub-menu {
   background-color: #fafafa;
-  padding: 0;
+  padding: 2rem 0 1rem 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -400,6 +426,74 @@
   background-color: #eeeeee;
   color: #1f1f1f;
   font-style: italic;
+}
+
+.contact-form-block {
+  padding: 2rem;
+  border: 1px solid #9c9c9c;
+  border-radius: 15px;
+}
+.contact-form-block .title {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.contact-form-block .caption {
+  margin-top: 0;
+  font-size: 18px;
+  color: #313131;
+}
+.contact-form-block .form .form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-form-block .form .form-body input, .contact-form-block .form .form-body textarea {
+  background-color: #f7f7f7;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  padding-left: 0.75rem;
+  min-width: 100%;
+}
+.contact-form-block .form .form-body input {
+  min-height: 2.5rem;
+}
+.contact-form-block .form .form-body textarea {
+  min-height: 100px;
+  padding-top: 0.5rem;
+}
+.contact-form-block .form .form-body .submit-btn {
+  border: 1px solid black;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  padding: 1rem 2rem 1rem 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.contact-form-block .form .form-body .submit-btn:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.wp-custom-theme-contact-info-block .wp-custom-theme-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid #868686;
+  font-size: 20px;
+  padding-bottom: 2rem;
+}
+.wp-custom-theme-contact-info-block .wp-custom-theme-contact-info p {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+.wp-custom-theme-contact-info-block .wp-custom-theme-social-link {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 1rem;
+  justify-content: center;
 }
 
 *,

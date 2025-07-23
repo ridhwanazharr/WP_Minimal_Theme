@@ -55,6 +55,8 @@ function custiom_wp_theme_setup() {
 		)
 	);
 
+	add_theme_support('editor-styles');
+
 	/*
 		* Switch default core markup for search form, comment form, and comments
 		* to output valid HTML5.
@@ -181,4 +183,35 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Add Custom Blocks
+ */
+
+function custiom_wp_theme_enqueue_block_editor_assets() {
+     wp_register_script(
+        'custiom-wp-theme-contact-info',
+        get_template_directory_uri() . '/blocks/contact-info/block.js',
+        array( 'wp-blocks', 'wp-element' ),
+        filemtime( get_template_directory() . '/blocks/contact-info/block.js' ),
+        true
+    ); 
+
+	wp_register_script(
+        'custiom-wp-theme-contact-form',
+        get_template_directory_uri() . '/blocks/contact-form/block.js',
+        array( 'wp-blocks', 'wp-element' ),
+        filemtime( get_template_directory() . '/blocks/contact-form/block.js' ),
+        true
+    ); 
+
+}
+add_action( 'enqueue_block_editor_assets', 'custiom_wp_theme_enqueue_block_editor_assets' );
+
+
+function custiom_wp_theme_register_blocks() {
+    register_block_type( get_template_directory() . '/blocks/contact-info/block.json' );
+	register_block_type( get_template_directory() . '/blocks/contact-form/block.json' );
+}
+add_action( 'init', 'custiom_wp_theme_register_blocks' );
 

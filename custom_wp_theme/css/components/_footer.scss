@@ -11,7 +11,7 @@ $footer-link:#aaaaaa;
     .footer-row{
         display:flex;
         gap:2rem;
-        padding-bottom:1rem;
+        padding-bottom:2rem;
         border-bottom:1px solid #414141;
 
         .site-branding{
@@ -27,6 +27,8 @@ $footer-link:#aaaaaa;
 
             .site-tagline{
                 font-size:20px;
+                color:#c5c5c5;
+                font-weight:400;
             }
 
             p{
@@ -63,6 +65,17 @@ $footer-link:#aaaaaa;
                 align-items:start;
                 gap:0.5rem;
             }
+
+            .contact-address {
+            display: block;
+                p {
+                    display: block;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    word-break: break-word;
+                    max-width: 100%; 
+                }
+            }
         }
     }
 
@@ -81,7 +94,13 @@ $footer-link:#aaaaaa;
     .site-info{
         padding-top:1rem;
         text-align:center;
+        color:#c5c5c5;
+        font-size:16px;
+        p{
+            margin:0
+        }
     }
+
 
     a{
         color:$footer-link;
@@ -89,6 +108,15 @@ $footer-link:#aaaaaa;
         &:hover{
             color:$footer-text;
         }
+    }
+}
+
+.entry-footer{
+    background-color:#6e6e6e;
+    color:black;
+    justify-content: center;
+    a{
+        text-decoration:none;
     }
 }
 
