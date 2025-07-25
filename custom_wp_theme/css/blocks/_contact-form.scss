@@ -1,6 +1,7 @@
+
 .contact-form-block{
     padding:2rem;
-    border:1px solid #9c9c9c;
+    border:$contact-form-br;
     border-radius:15px;
 
     .title{
@@ -12,7 +13,7 @@
     .caption{
         margin-top:0;
         font-size:18px;
-        color:#313131;
+        color:$contact-caption;
     }
 
     .form{
@@ -23,8 +24,8 @@
             gap:2rem;
 
             input, textarea{
-                background-color:#f7f7f7;
-                border:1px solid #dfdfdf;
+                background-color:$contact-input-bg;
+                border:$contact-form-br;
                 border-radius:10px;
                 padding-left:0.75rem;
                 min-width:100%;
@@ -40,16 +41,16 @@
             }
 
             .submit-btn{
-                border:1px solid black;
+                border:$submit-btn-br;
                 border-radius:15px;
-                color:white;
-                background-color:black;
+                color:$submit-btn-color;
+                background-color:$submit-btn-bg;
                 padding: 1rem 2rem 1rem 2rem;
                 transition:background-color 0.3s ease, color 0.3s ease;
 
                 &:hover{
-                    color:black;
-                    background-color:transparent;
+                    color:$submit-btn-hover-color;
+                    background-color:$submit-btn-hover-bg;
                 }
             }
         }

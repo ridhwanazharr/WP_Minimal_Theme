@@ -1,6 +1,4 @@
-$link-color:#000000;
-$link-color-hover:#464646;
-$link-transition:color .3s ease;
+
 
 .main-navigation{
         ul{
@@ -34,7 +32,7 @@ $link-transition:color .3s ease;
             }
 
             .sub-menu{
-                background-color: #fafafa;
+                background-color: $submenu-bg;
                 padding:2rem 0 1rem 0;
                 display:flex;
                 flex-direction:column;
@@ -50,7 +48,7 @@ $link-transition:color .3s ease;
                 }
 
                 .current_page_item{
-                    background-color: #f0f0f0;
+                    background-color: $current-page-item;
                 }
             }
         }
@@ -61,7 +59,7 @@ $link-transition:color .3s ease;
     max-height:0.01px;
     transition:max-height 0.5s ease-in-out;
     overflow:hidden;
-    background-color:#fcfcfc;
+    background-color:$collapse-nav-bg;
 }
 
 @media(max-width:720px){
@@ -81,7 +79,7 @@ $link-transition:color .3s ease;
 
     .collapse-navigation{
         display:block;
-        border-bottom:1px solid #b1b1b1;
+        border-bottom:$collapse-nav-border;
 
         ul{
             margin:0;
@@ -92,7 +90,7 @@ $link-transition:color .3s ease;
                 padding:0.5rem 1rem 0.5rem 1rem;
                 a{
                     text-decoration:none;
-                    color:black;
+                    color:$link-color;
                 }
             }
             
@@ -119,9 +117,6 @@ $link-transition:color .3s ease;
                 .menu-item{
                     display:flex;
                     gap:0.5rem;
-                }
-                .menu-item::before{
-                    content: "🞵";
                 }
             }
         }

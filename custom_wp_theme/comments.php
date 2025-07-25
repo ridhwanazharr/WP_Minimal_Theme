@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package custiom_wp_theme
+ * @package rawingtheme_minimal
  */
 
 /*
@@ -29,18 +29,18 @@ if ( post_password_required() ) {
 		<h2 class="comment-title-head">Comments</h2>
 		<h2 class="comments-title">
 			<?php
-			$custiom_wp_theme_comment_count = get_comments_number();
-			if ( '1' === $custiom_wp_theme_comment_count ) {
+			$rawingtheme_minimal_comment_count = get_comments_number();
+			if ( '1' === $rawingtheme_minimal_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'custiom_wp_theme' ),
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'rawingtheme_minimal' ),
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			} else {
 				printf( 
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $custiom_wp_theme_comment_count, 'comments title', 'custiom_wp_theme' ) ),
-					number_format_i18n( $custiom_wp_theme_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $rawingtheme_minimal_comment_count, 'comments title', 'rawingtheme_minimal' ) ),
+					number_format_i18n( $rawingtheme_minimal_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			}
@@ -66,7 +66,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'custiom_wp_theme' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'rawingtheme_minimal' ); ?></p>
 			<?php
 		endif;
 

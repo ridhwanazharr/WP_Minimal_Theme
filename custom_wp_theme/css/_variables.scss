@@ -1,0 +1,57 @@
+//Main/Body
+$color-white: #ffffff;
+$color-black: #000000;
+$font-stack: 'Cardo', sans-serif;
+$base-font-size: 20px;
+$line-height: 1.6;
+$link-transition:color 0.3s ease;
+
+//Navigation
+$link-color:#000000;
+$link-color-hover:#464646;
+$submenu-bg: #fafafa;
+$current-page-item:#f0f0f0;
+$collapse-nav-bg:#fcfcfc;
+$collapse-nav-border:1px solid #b1b1b1;
+
+//Header
+$header-bg : white;
+$header-text-color : black;
+$menu-toggle-border : #c7c7c7;
+
+//Footer
+$footer-bg:black;
+$footer-text:white;
+$footer-link:#aaaaaa;
+$footer-border:1px solid #414141;
+
+//Content
+$link-color:#5e5e5e;
+$link-color-hover:#161616;
+
+//Comments
+$link-color:#333333;
+$link-color-secondary:#5e5e5e;
+$link-color-hover:black;
+$text-color:white;
+$link-transition:color 0.3s ease;
+$comment-border:1px solid #707070;
+$comment-body-border:1px solid #d4d4d4;
+
+//Blockquote
+$bquote-color:#1f1f1f;
+$bquote-bg:#eeeeee;
+
+//***Blocks
+//Contact Info
+$contact-br:1px solid #868686;
+//Contact Form
+$contact-form-br:1px solid #9c9c9c;
+$contact-caption:#313131;
+$contact-input-br:1px solid #dfdfdf;
+$contact-input-bg:#f7f7f7;
+$submit-btn-br:1px solid black;
+$submit-btn-bg:black;
+$submit-btn-color:white;
+$submit-btn-hover-bg:transparent;
+$submit-btn-hover-color:black;

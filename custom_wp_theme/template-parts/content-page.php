@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package custiom_wp_theme
+ * @package rawingtheme_minimal
  */
 
 ?>
@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php custiom_wp_theme_post_thumbnail(); ?>
+	<?php rawingtheme_minimal_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -22,7 +22,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'custiom_wp_theme' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rawingtheme_minimal' ),
 				'after'  => '</div>',
 			)
 		);

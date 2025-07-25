@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package custiom_wp_theme
+ * @package rawingtheme_minimal
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

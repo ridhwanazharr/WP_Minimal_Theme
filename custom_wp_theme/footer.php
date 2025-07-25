@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package custiom_wp_theme
+ * @package rawingtheme_minimal
  */
 
 ?>

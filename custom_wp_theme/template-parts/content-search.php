@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package custiom_wp_theme
+ * @package rawingtheme_minimal
  */
 
 ?>
@@ -16,20 +16,20 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			custiom_wp_theme_posted_on();
-			custiom_wp_theme_posted_by();
+			rawingtheme_minimal_posted_on();
+			rawingtheme_minimal_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php custiom_wp_theme_post_thumbnail(); ?>
+	<?php rawingtheme_minimal_post_thumbnail(); ?>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php custiom_wp_theme_entry_footer(); ?>
+		<?php rawingtheme_minimal_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

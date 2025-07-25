@@ -1,4 +1,4 @@
-=== custiom_wp_theme ===
+=== rawingtheme_minimal ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -10,7 +10,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called custiom_wp_theme.
+A starter theme called rawingtheme_minimal.
 
 == Description ==
 
@@ -26,7 +26,7 @@ Description
 
 = Does this theme support any plugins? =
 
-custiom_wp_theme includes support for WooCommerce and for Infinite Scroll in Jetpack.
+rawingtheme_minimal includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

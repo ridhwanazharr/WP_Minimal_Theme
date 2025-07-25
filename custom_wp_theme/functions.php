@@ -1,11 +1,11 @@
 <?php
 /**
- * custiom_wp_theme functions and definitions
+ * rawingtheme_minimal functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  * 
  *
- * @package custiom_wp_theme
+ * @package rawingtheme_minimal
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -20,14 +20,14 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function custiom_wp_theme_setup() {
+function rawingtheme_minimal_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on custiom_wp_theme, use a find and replace
-		* to change 'custiom_wp_theme' to the name of your theme in all the template files.
+		* If you're building a theme based on rawingtheme_minimal, use a find and replace
+		* to change 'rawingtheme_minimal' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'custiom_wp_theme', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'rawingtheme_minimal', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -50,8 +50,8 @@ function custiom_wp_theme_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'header-menu' => esc_html__( 'Header Menu', 'custiom_wp_theme' ),
-			'footer-menu' => esc_html__( 'Footer Menu', 'custiom_wp_theme' ),
+			'header-menu' => esc_html__( 'Header Menu', 'rawingtheme_minimal' ),
+			'footer-menu' => esc_html__( 'Footer Menu', 'rawingtheme_minimal' ),
 		)
 	);
 
@@ -78,7 +78,7 @@ function custiom_wp_theme_setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'custiom_wp_theme_custom_background_args',
+			'rawingtheme_minimal_custom_background_args',
 			array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -104,7 +104,7 @@ function custiom_wp_theme_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'custiom_wp_theme_setup' );
+add_action( 'after_setup_theme', 'rawingtheme_minimal_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -113,22 +113,22 @@ add_action( 'after_setup_theme', 'custiom_wp_theme_setup' );
  *
  * @global int $content_width
  */
-function custiom_wp_theme_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'custiom_wp_theme_content_width', 640 );
+function rawingtheme_minimal_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'rawingtheme_minimal_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'custiom_wp_theme_content_width', 0 );
+add_action( 'after_setup_theme', 'rawingtheme_minimal_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function custiom_wp_theme_widgets_init() {
+function rawingtheme_minimal_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'custiom_wp_theme' ),
+			'name'          => esc_html__( 'Sidebar', 'rawingtheme_minimal' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'custiom_wp_theme' ),
+			'description'   => esc_html__( 'Add widgets here.', 'rawingtheme_minimal' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -136,26 +136,26 @@ function custiom_wp_theme_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'custiom_wp_theme_widgets_init' );
+add_action( 'widgets_init', 'rawingtheme_minimal_widgets_init' );
 
 
 /**
  * Enqueue scripts and styles.
  */
-function custiom_wp_theme_scripts() {
-	wp_enqueue_style( 'custiom_wp_theme-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'custiom_wp_theme-style', 'rtl', 'replace' );
+function rawingtheme_minimal_scripts() {
+	wp_enqueue_style( 'rawingtheme_minimal-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'rawingtheme_minimal-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'custiom_wp_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'custiom_wp_theme_custom-jquery', get_template_directory_uri() . '/js/jquery.js', array( 'jquery' ) );
-	wp_enqueue_style( 'custiom_wp_theme-css', get_template_directory_uri() . '/css/basic-monochrome.css' );
-	wp_enqueue_style( 'custiom_wp_theme-fa-icon', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css' );
+	//wp_enqueue_script( 'rawingtheme_minimal-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'rawingtheme_minimal_custom-jquery', get_template_directory_uri() . '/js/jquery.js', array( 'jquery' ) );
+	wp_enqueue_style( 'rawingtheme_minimal-css', get_template_directory_uri() . '/css/basic-monochrome.css' );
+	wp_enqueue_style( 'rawingtheme_minimal-fa-icon', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'custiom_wp_theme_scripts' );
+add_action( 'wp_enqueue_scripts', 'rawingtheme_minimal_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -188,7 +188,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Add Custom Blocks
  */
 
-function custiom_wp_theme_enqueue_block_editor_assets() {
+function rawingtheme_minimal_enqueue_block_editor_assets() {
      wp_register_script(
         'custiom-wp-theme-contact-info',
         get_template_directory_uri() . '/blocks/contact-info/block.js',
@@ -206,12 +206,12 @@ function custiom_wp_theme_enqueue_block_editor_assets() {
     ); 
 
 }
-add_action( 'enqueue_block_editor_assets', 'custiom_wp_theme_enqueue_block_editor_assets' );
+add_action( 'enqueue_block_editor_assets', 'rawingtheme_minimal_enqueue_block_editor_assets' );
 
 
-function custiom_wp_theme_register_blocks() {
+function rawingtheme_minimal_register_blocks() {
     register_block_type( get_template_directory() . '/blocks/contact-info/block.json' );
 	register_block_type( get_template_directory() . '/blocks/contact-form/block.json' );
 }
-add_action( 'init', 'custiom_wp_theme_register_blocks' );
+add_action( 'init', 'rawingtheme_minimal_register_blocks' );
 

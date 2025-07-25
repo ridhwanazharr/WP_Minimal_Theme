@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package custiom_wp_theme
+ * @package rawingtheme_minimal
  */
 
 ?>
@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				custiom_wp_theme_posted_on();
-				custiom_wp_theme_posted_by();
+				rawingtheme_minimal_posted_on();
+				rawingtheme_minimal_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php custiom_wp_theme_post_thumbnail(); ?>
+	<?php rawingtheme_minimal_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -37,7 +37,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'custiom_wp_theme' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'rawingtheme_minimal' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -50,7 +50,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'custiom_wp_theme' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rawingtheme_minimal' ),
 				'after'  => '</div>',
 			)
 		);
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php custiom_wp_theme_entry_footer(); ?>
+		<?php rawingtheme_minimal_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

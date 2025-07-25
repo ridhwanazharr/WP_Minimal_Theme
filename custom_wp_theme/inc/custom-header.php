@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package custiom_wp_theme
+ * @package rawingtheme_minimal
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses custiom_wp_theme_header_style()
+ * @uses rawingtheme_minimal_header_style()
  */
-function custiom_wp_theme_custom_header_setup() {
+function rawingtheme_minimal_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'custiom_wp_theme_custom_header_args',
+			'rawingtheme_minimal_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'custiom_wp_theme_header_style',
+				'wp-head-callback'   => 'rawingtheme_minimal_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'custiom_wp_theme_custom_header_setup' );
+add_action( 'after_setup_theme', 'rawingtheme_minimal_custom_header_setup' );
 
-if ( ! function_exists( 'custiom_wp_theme_header_style' ) ) :
+if ( ! function_exists( 'rawingtheme_minimal_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see custiom_wp_theme_custom_header_setup().
+	 * @see rawingtheme_minimal_custom_header_setup().
 	 */
-	function custiom_wp_theme_header_style() {
+	function rawingtheme_minimal_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

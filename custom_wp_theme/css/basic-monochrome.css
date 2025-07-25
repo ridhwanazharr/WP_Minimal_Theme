@@ -48,17 +48,19 @@
     display: none;
   }
   .site-header .main-navigation {
-    gap: 0.5rem;
+    font-size: 1.5rem;
+    gap: 0.75rem;
   }
   .site-header .main-navigation ul {
     display: none;
   }
   .site-header .main-navigation .menu-toggle {
     display: flex;
-    padding: 0;
+    padding: 1rem;
     align-items: center;
     background-color: transparent;
-    border: none;
+    border: 1px solid #c7c7c7;
+    border-radius: 10px;
   }
 }
 .page {
@@ -84,11 +86,11 @@
   text-decoration: none;
 }
 .site-main a {
-  color: #5e5e5e;
+  color: #333333;
   transition: color 0.3s ease;
 }
 .site-main a:hover {
-  color: #161616;
+  color: black;
 }
 .site-main .entry-footer {
   display: flex;
@@ -131,7 +133,7 @@
 }
 .site-footer .footer-row .site-branding .site-tagline {
   font-size: 20px;
-  color: #c5c5c5;
+  color: #aaaaaa;
   font-weight: 400;
 }
 .site-footer .footer-row .site-branding p {
@@ -150,7 +152,7 @@
   gap: 1rem;
   text-align: start;
   width: 25%;
-  color: #c5c5c5;
+  color: #aaaaaa;
 }
 .site-footer .footer-row .footer-menu .footer-menu-title {
   color: white;
@@ -188,7 +190,7 @@
 .site-footer .site-info {
   padding-top: 1rem;
   text-align: center;
-  color: #c5c5c5;
+  color: #aaaaaa;
   font-size: 16px;
 }
 .site-footer .site-info p {
@@ -203,12 +205,12 @@
 }
 
 .entry-footer {
-  background-color: #6e6e6e;
-  color: black;
+  background-color: #aaaaaa;
   justify-content: center;
 }
 .entry-footer a {
   text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 720px) {
@@ -264,7 +266,7 @@
 }
 .comments-area .comment-list .comment-body .comment-author img {
   border-radius: 50%;
-  border: 1px solid #8a8a8a;
+  border: 1px solid #707070;
 }
 .comments-area .comment-list .comment-body .comment-author .fn a {
   text-decoration: none;
@@ -302,7 +304,7 @@
 .comments-area .comment-list .comment-body .reply {
   color: #5e5e5e;
   padding: 0.25rem 1rem 0.25rem 1rem;
-  border: 1px solid gray;
+  border: 1px solid #d4d4d4;
   font-size: 0.9rem;
   width: -moz-fit-content;
   width: fit-content;
@@ -325,12 +327,12 @@
   gap: 1rem;
 }
 .main-navigation ul a {
-  color: #000000;
+  color: #333333;
   transition: color 0.3s ease;
   font-weight: 500;
 }
 .main-navigation ul a:hover {
-  color: #464646;
+  color: black;
 }
 .main-navigation ul .current_page_item a {
   text-decoration: underline;
@@ -394,7 +396,7 @@
   }
   .collapse-navigation ul .menu-item a {
     text-decoration: none;
-    color: black;
+    color: #333333;
   }
   .collapse-navigation ul .current_page_item a {
     text-decoration: underline;
@@ -413,9 +415,6 @@
   .collapse-navigation ul .sub-menu .menu-item {
     display: flex;
     gap: 0.5rem;
-  }
-  .collapse-navigation ul .sub-menu .menu-item::before {
-    content: "🞵";
   }
   .collapse-navigation.collapsed {
     max-height: 1000px;
@@ -450,7 +449,7 @@
 }
 .contact-form-block .form .form-body input, .contact-form-block .form .form-body textarea {
   background-color: #f7f7f7;
-  border: 1px solid #dfdfdf;
+  border: 1px solid #9c9c9c;
   border-radius: 10px;
   padding-left: 0.75rem;
   min-width: 100%;

@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package custiom_wp_theme
+ * @package rawingtheme_minimal
  */
 
 get_header();
